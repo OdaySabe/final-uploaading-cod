@@ -1,0 +1,107 @@
+{
+    "name": "Mashed Potatoes",
+    "serves": 4,
+    "ingredients": [
+      {
+        "name": "water",
+        "count": 0.5,
+      "unit": "teaspoon",
+      "calories":0,
+      "healthy":true
+      },
+      {
+        "name": "potatoes",
+        "count": 2,
+        "unit": "teaspoon",
+        "calories":600,
+        "healthy":false
+        
+      },
+      {
+        "name": "butter",
+        "count": 2,
+        "unit": "tablespoons",
+        "calories":1000,
+        "healthy":false
+      },
+      {
+        "name": "salt",
+        "count": 0.5,
+        "unit": "teaspoon",
+        "calories":10,
+        "healthy":true
+      },
+      {
+        "name": "pepper",
+        "count": 0.25,
+        "unit": "teaspoons",
+        "calories":20,
+        "healthy":false
+      }
+    ],
+    "directions": [
+        "Cut potatoes into half inch thick slices",
+      "Add potatoes to a pot and cover with an inch of water.",
+      "Bring the water to a boil over high heat, then reduce to a simmer and cover.",
+      "Simmer for 20 minutes or until potatoes are fork tender.",
+      "Drain water from potatoes, leaving the potatoes in the original pot.",
+      "Add remaining ingredients to the pot with the potatoes.",
+      "Mash potatoes until they reach the desired consistency.",
+      "Serve immediately, or cover and refrigerate."
+    ],
+
+   "animal":[ {
+
+      "name":"Cow",
+      "weight":{
+        "killoes":720,
+        "tons":0.72
+      },
+      "placeLiving":"all world",
+      "endangered":false,
+      "foods":["grass","leafs"],
+      "animalEatingIt":["predatory cats","human"],
+      "taste":10
+    }
+  ,
+   {
+    "name":"Elephant",
+    "weight":{
+      "killoes":4000,
+      "tons":4
+    },
+    "placeLiving":"africa and india",
+    "endangered":true,
+    "foods":["grass","leafs"],
+    "animalEatingIt":["predatory cats"],
+    "taste":0
+  },
+   {
+    "name":"Gray Wolf",
+    "weight":{
+      "killoes":300,
+      "tons":0.3
+    },
+    "placeLiving":"cold areas and mouten places",
+    "endangered":false,
+    "foods":["middle size animals","small size animals"],
+    "animalEatingIt":[],
+    "taste":0
+  },
+   {
+    "name":"Squirrel",
+    "weight":{
+      "killoes":4.5,
+      "tons":0
+    },
+    "placeLiving":"america and Europ",
+    "endangered":false,
+    "foods":["grain"],
+    "animalEatingIt":["predatory cats","predatory birds"],
+    "taste":0
+  }
+]
+}
+
+
+  

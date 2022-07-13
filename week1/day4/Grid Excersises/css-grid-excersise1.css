@@ -1,0 +1,75 @@
+.UI{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-template-areas: 
+    "f c c c c"
+    "f c c c c"
+    "f c c c c"
+    "f c c c c"
+    "f c c c c"
+    "f c c c c"
+    "f c c c c"
+    "f c c c c"
+    "f c c c c"
+    "f m m m m"
+    ;
+}
+.friends{
+    grid-area: f;
+    background-color: purple;
+    display: grid;
+    grid-template-rows: 2fr repeat(4,1fr);
+}
+.chatContent{
+    grid-area: c;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-gap: 10px;
+
+}
+.messageContent{
+    grid-area: m;
+    background-color: purple;
+    display: grid;
+    grid-template-columns: 3fr 1fr
+}
+.ms{
+    background-color: purple;
+    color: white;
+    font-size: 18px;
+}
+.h3{
+    padding: 10px;
+}
+.fl{
+    padding: 10px;
+    margin: 10px;
+    height: fit-content;
+    background-color: darkorchid;
+}
+.send{
+    display: grid;
+    justify-self: start;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: lightgrey;
+    
+}
+.recive{
+    display: grid;
+    justify-self: end;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 5px;
+    margin-right: 20px;
+    background-color: green;
+}

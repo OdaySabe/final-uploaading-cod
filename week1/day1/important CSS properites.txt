@@ -1,0 +1,10 @@
+width,
+ height,
+ background-color
+, background-image,
+ border,
+ border-radius
+, box-shadow
+, font-size
+, font-family
+, text-align.

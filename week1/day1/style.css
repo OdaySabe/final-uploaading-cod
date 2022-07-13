@@ -1,0 +1,39 @@
+h1{
+    color:red
+}
+#piority{
+    color:yellow
+}
+.testing{
+    color:green
+}
+.heading{
+    color:blue
+}
+.cssStyle{
+    width: 100px;
+    height: 100px;
+    background-color:#e74c3c;
+}
+.xt{
+    color:blueviolet
+}
+label{
+    color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#wi{
+    width: 50%;
+    background-color: gray;
+}
+h1:hover{
+    font-size: 60px;
+}
+li:nth-child(2):hover{
+font-size: 60px;
+}
+div>p{
+    background-color: green;
+    font-size: 80px;
+}

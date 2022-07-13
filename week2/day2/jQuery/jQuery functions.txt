@@ -1,0 +1,33 @@
+$("#container")=document.getElementById("container")
+
+$("#container").hide()=document.getElementById("container").style.display = "none"
+
+$(".class-name") = chose an element with the class name
+
+$("document tag")= return an array of elements of that tag.
+
+.css("color","red")= styling all elements of the selector array their color to red
+
+$('#my-input').val()= a method to return the value of an input
+$("div").data().color  = access the data object and get the color attribute but you must set data-="valueName" to make an array of data 
+to access it by data().valueName=value
+
+$("id").on("click",function(){})= doc.onclick=function(){} 
+$("#btn").click(function () {
+  console.log("clicked again");
+});
+two functions of passing a function to an event
+$(this): its the way to use this in jQuery
+
+const DyEl = "<h1> hey </h1> <p>how are you</p>";
+const el = $(DyEl);
+console.log(el);
+$("body").append(el);
+$("selector").append("<h1>${string}</h1>");
+how to creat an element and append it to the body in jQuery
+
+
+$("#blogs").on("click", ".blog", function () {
+  $(this).text("blargh");
+});
+add a listiner to this element which have this class and this id

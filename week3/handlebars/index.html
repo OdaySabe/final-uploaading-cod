@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="getIt"></div>
+    <div id="classroom"></div>
+ 
+    <script id = "testing" type="text/x-handlebars-template">
+        <div class="container">
+            <h1>{{test}}</h1>
+            <h1>heading</h1>
+        </div>
+    </script>
+    <script id="studentsTamplete" type="text/x-handlebars-template">
+        {{#each classmates}}
+        <div >
+            {{#if goodStudent}} <h1>he is good student</h1>{{/if}}
+            <h2>{{name}}</h2>
+            <p>{{description}}</p>
+        </div>
+        {{/each}}
+    </script>
+<script type="text/javascript" src="jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+<script src="script.js" ></script>
+</body>
+</html>
