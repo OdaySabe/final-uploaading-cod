@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+}
+#holder{
+    text-align: center;
+    background-color: lightgreen;
+    margin-top: 0px;
+    
+}
+#time{
+    margin-top: 0px;
+    font-size: 24pt;
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    font-style: italic;
+    height: max-content;
+}
+#playGround{
+    height: 600px;
+    width: 100%;
+    background-color: green;
+}
+#buttoms{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100px;
+}
+#frogsLeft{
+    background-color: lightgreen;
+    font-size: 24pt;
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    border: 0px;
+}
+#start{
+    background-color: skyblue;
+    font-size: 24pt;
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    border: blue 3px solid;
+}
+#start:active{
+    background-color: blue;
+}
+.clock{
+    position: absolute;
+    
+}

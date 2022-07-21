@@ -69,7 +69,8 @@ const findRelevantApts = function (
   maxPrice,
   minRooms,
   maxRooms,
-  immediate
+  immediate,
+  parking
 ) {
   let relevantApts = apartments.filter(
     (a) =>
@@ -81,7 +82,19 @@ const findRelevantApts = function (
   );
 
   immediate = !immediate[0].checked;
-  return immediate ? relevantApts : relevantApts.filter((a) => a.immediate);
+  parking = !parking[0].checked;
+  console.log("parking", parking);
+  console.log("immediate", immediate);
+  if (immediate && parking) {
+    return relevantApts;
+  }
+  if (!immediate && parking) {
+    return relevantApts.filter((a) => a.immediate);
+  }
+  if (immediate && !parking) {
+    return relevantApts.filter((a) => a.parking);
+  }
+  return relevantApts.filter((a) => a.parking).filter((a) => a.immediate);
 };
 ////////////
 $("button").on("click", function () {
@@ -91,6 +104,7 @@ $("button").on("click", function () {
   let minRooms = $("#min-r-input").val();
   let maxRooms = $("#max-r-input").val();
   let immediate = $("#immed-y");
+  let parking = $("#park-y");
 
   let relevantApts = findRelevantApts(
     address,
@@ -98,7 +112,8 @@ $("button").on("click", function () {
     maxPrice,
     minRooms,
     maxRooms,
-    immediate
+    immediate,
+    parking
   );
   renderApts(relevantApts);
 });
@@ -106,7 +121,6 @@ $("button").on("click", function () {
 const renderApts = function (apartments) {
   $("#results").empty();
   const source = $("#tamplete").html();
-  console.log(source);
   const template = Handlebars.compile(source);
   $("#results").append(template(apartments));
 };
