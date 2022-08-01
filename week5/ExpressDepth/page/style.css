@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+}
+input,button{
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-left: 45%;
+}
+input {
+    margin-bottom: 20px;
+    width: 200px;
+}
+h1{
+    text-align: center;
+}
