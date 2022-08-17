@@ -30,9 +30,9 @@ let visitor = new Visitor({
 solsys.palnets.push(plnt);
 plnt.visitors.push(visitor);
 visitor.visitedPlanets.push(plnt);
-solsys.save();
-plnt.save();
-visitor.save();
+// solsys.save();
+// plnt.save();
+// visitor.save();
 // ///////////1
 Visitor.find({})
   .populate("visitedPlanets")

@@ -1,0 +1,22 @@
+(git branch) /// this come after having a master and commited
+//after being in master do , git branch 
+make a branch for this master.
+
+//it shows the branches on this master
+
+
+(git checkout -b branch-name)// creating a new branch and give it a name
+.. checkout : go to different branch
+..-b : new branch
+.. branch-name :its name
+
+// do git branch it will show your new branch name
+// then run git checkout master it retrun to master branch without having any changes from new branch
+
+(git push origin branch-name_)
+
+(git checkout branch-name)
+
+(git merge branch-name)// must be in master branch first
+git push origin -d <branchName> deleting remotly 
+git branch --delete old-branch deleting branch locally

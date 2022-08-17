@@ -1,0 +1,52 @@
+1) O(n)
+2)O(log(n))
+3)O(1)
+4)O(n^2)
+5)O(n)
+6)
+arr=[1,2,1,2,3,3];
+const findDuplicates = function (ages) {
+let obj={};
+    for(number of arr){
+		if(obj[number]){
+		console.log("found one")}
+		else { obj[number]=number}
+    }
+}
+7)
+ employees={
+	id:"ax01"
+	
+}
+8)
+let empoyees = {
+  ax01: { name: "Ray", age: 28, salary: 1300 },
+  qs84: { name: "Lucius", age: 31, salary: 840 },
+  bg33: { name: "Taylor", age: 18, salary: 2700 },
+};
+function findEmployeeSalary(empID) {
+  return empoyees[empID].salary;
+}
+
+function findIndexOf(number) {
+  let start = 0;
+  let end = numbers.length;
+  let middle = numbers.length / 2;
+
+ while(true) {
+    if (number < numbers[middle]) {
+      end = middle - 1;
+      middle = Math.floor((end - start) / 2);
+    } else if (number > numbers[middle]) {
+      start = middle + 1;
+      middle = Math.floor((end - start) / 2);
+    } else if (number == numbers[middle]) {
+  	return true;
+    } else if (start == end) {
+      break;
+      return false;
+    }
+  }
+}
+
+console.log(findIndexOf(572));
