@@ -1,13 +1,19 @@
-import React, { Component } from 'react';
-import Item from './Item';
+import React, { Component } from "react";
+import Item from "./Item";
 
 class Home extends Component {
-
-    render() {
-        return
-        {/* your code here */ }
-
-    }
+  render() {
+    return (
+      <div>
+        <h1>Store</h1>
+        {this.props.store.map((data) => {
+          return (
+            <Item data={data} shouldDiscount={this.props.shouldDiscount} />
+          );
+        })}
+      </div>
+    );
+  }
 }
 
-export default Home
+export default Home;
