@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Red{
+  color: red;
+  padding: 20px;
+  background-color: rgb(208, 194, 116);
+  border-radius:50%;
+ box-shadow: 3px 3px 3px red;
+  
+}
+.Green{
+  color: green;
+  padding: 20px;
+  background-color: rgb(208, 194, 116);
+  border-radius:50%;
+ box-shadow: 3px 3px 3px green;
+}
+.NavBar{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  background-color: rgb(210, 91, 91);
+   height: 100px;
+   margin: 5px;
+   box-shadow: 10px 5px 5px rgb(161, 62, 62);
+   border-radius: 10px;
+
+  justify-content: center;
+  align-content: center;
+  
+}
+.Link{
+  color: white;
+  text-decoration: none;
+  height: 20px;
+  padding: 10px;
+}
+a:hover{
+  box-shadow: 10px 5px 5px rgb(161, 62, 62);
+  border-radius: 7px;
+  background-color: #8d2333;
+}
+.balance{
+  font-size: x-large;
+  color: gold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
+}
+.balance>span{
+  margin: 20px;
+}
+.singleTransactions{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  border-bottom: 2px solid gray;
+  padding:  30px;
+  
+}
+.positive{
+  background-color: rgb(222, 240, 222);
+}
+.negative{
+  background-color: rgb(242, 228, 224);
+}
+.singleTransactions:hover{
+  background-color: #FFFFFF
+}
+.buttom{
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 3px 3px 3px rgb(150, 79, 79);
+}
+.buttom:hover{
+  background-color:rgb(150, 79, 79); ;
+}
+.Operation{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  height: 200px;
+  margin: 50px;
+}
+.OperationButtoms{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+  width: 100%;
+  margin-left: 102%;
+   
+}
+.OperationButtoms>button{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  color: white;
+  background-color: #D25B5B;
+  margin-top: 50px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px rgb(150, 79, 79);
+}
+.OperationButtoms>button:hover{
+  background-color: rgb(150, 91, 91);
+}
+input{
+  font-size: larger;
+  text-align: center;
+}
+.eachBalanceNegative{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: lightgreen;
+  color: #282c34;
+  margin: 5px;
+  box-shadow: 3px 3px 3px rgb(150, 79, 79);
+}
+.eachBalancePositive{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: #fd5f5f;
+  color: #282c34;
+  margin: 5px;
+  box-shadow: 3px 3px 3px rgb(150, 79, 79);
+}

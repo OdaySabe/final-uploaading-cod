@@ -1,0 +1,112 @@
+
+*{
+    text-decoration: none;
+  
+}
+
+
+a{
+    cursor: pointer;
+    color: white;
+}
+#logoHead{
+    margin-left: 40%;
+}
+.Users{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20%;
+}
+.user{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #141414;
+    background-color: wheat;
+    border: 3px wheat solid;
+    border-radius: 10px ;
+    height: 300px;
+    
+}
+.catalogmovies{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+
+}
+.movie{
+    width: 300px;
+    height: 300px;
+}
+.movieDetails{
+   text-align: center;
+   font-size: larger;
+   padding: 20px;
+}
+.movieDetails>*{
+    margin: 20px;
+}
+.logo{
+    font-size: larger;
+}
+.logo>*{
+    margin: 10px;
+}
+.reflix{
+    display: inline-block;
+    margin-left: 90%;
+    margin-top: 0px;
+    color: #61DBFB;
+}
+.searchBar{
+ width: 20%;
+ height: 30px;
+ font-size: larger;
+ background-color: black;
+ color: white;
+}
+.displayNon{
+    display: none;
+}
+.UserDetails{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.listOfMovies{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.privateMovie{
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+}
+.add{
+    position:absolute;
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.remove{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    left: 30px;
+    top: 30px;
+}
+.addButton{
+    position:relative ;
+}
+.deleteButton{
+    position: relative;
+}
+
+    
+
